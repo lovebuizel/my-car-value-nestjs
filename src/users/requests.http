@@ -7,6 +7,21 @@ content-type: application/json
     "password": "bbb"
 }
 
+### Sign in as an existing user
+POST http://localhost:3000/auth/signin
+content-type: application/json
+
+{
+    "email": "aaaa@aaa.com",
+    "password": "bbb"
+}
+
+### Get the currently signed in user
+GET http://localhost:3000/auth/whoami
+
+### Sign out
+POST http://localhost:3000/auth/signout
+
 ### Find a particular user with a given ID
 GET http://localhost:3000/auth/4
 
@@ -23,13 +38,4 @@ content-type: application/json
 {
     "email": "aaa@aaa.com",
     "password": "ccc"
-}
-
-### signin
-POST http://localhost:3000/auth/signin
-content-type: application/json
-
-{
-    "email": "aaaa@aaa.com",
-    "password": "bbb"
 }
