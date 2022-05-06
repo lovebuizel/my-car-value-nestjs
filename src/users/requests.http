@@ -3,8 +3,8 @@ POST http://localhost:3000/auth/signup
 content-type: application/json
 
 {
-    "email": "aaaa@aaa.com",
-    "password": "bbb"
+    "email": "Todd@gmail.com",
+    "password": "123456"
 }
 
 ### Sign in as an existing user
@@ -12,8 +12,8 @@ POST http://localhost:3000/auth/signin
 content-type: application/json
 
 {
-    "email": "aaaa@aaa.com",
-    "password": "bbb"
+    "email": "Todd@gmail.com",
+    "password": "123456"
 }
 
 ### Get the currently signed in user
@@ -26,7 +26,7 @@ POST http://localhost:3000/auth/signout
 GET http://localhost:3000/auth/4
 
 ### Find all users with a given email
-GET http://localhost:3000/auth?email=aaa@aaa.com
+GET http://localhost:3000/auth?email=Todd@gmail.com
 
 ### Delete a user given id
 DELETE http://localhost:3000/auth/2
@@ -36,6 +36,6 @@ PATCH http://localhost:3000/auth/3
 content-type: application/json
 
 {
-    "email": "aaa@aaa.com",
-    "password": "ccc"
+    "email": "Todd@gmail.com",
+    "password": "123"
 }
